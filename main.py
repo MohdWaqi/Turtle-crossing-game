@@ -4,6 +4,8 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
+########################### Setting up the Screen #################
+
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.title("Turtle Crossing")
@@ -12,8 +14,12 @@ player = Player()
 car = CarManager()
 score = Scoreboard()
 screen.listen()
+
+################# Controlling the turtle to cross the road #####################
+
 screen.onkey(fun=player.move, key="Up")
 
+################### Random cars on the road and increase the speed of cars every successive level ###############
 
 game_is_on = True
 while game_is_on:

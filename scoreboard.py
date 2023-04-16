@@ -1,6 +1,8 @@
 from turtle import Turtle
 FONT = ("Courier", 24, "normal")
 
+############################ Setting up ScoreBoard and Gameover Display ########################
+
 
 class Scoreboard(Turtle):
 
